@@ -19,7 +19,8 @@ public class AppMain {
 
         System.out.println("Numero di Topo Gigio: " + miaRubrica.cercaNumeroPerNome("Topo Gigio"));
         System.out.println("------------------------------");
-
+        System.out.println("Numero 2726161 è di: " + miaRubrica.cercaNomePerNumero("2726161"));
+        System.out.println("------------------------------");
         miaRubrica.rimuoviPersona("Rossi");
 
 

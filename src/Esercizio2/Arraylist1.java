@@ -16,7 +16,7 @@ public class Arraylist1 {
 
         for (int i = 0; i < n; i++) {
 
-            int numeriCasuali = random.nextInt(101);
+            int numeriCasuali = random.nextInt(0,101);
             numeri.add(numeriCasuali);
 
         }

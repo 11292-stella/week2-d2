@@ -27,7 +27,7 @@ public class Rubrica {
             System.out.println("Nome: " + nome + ", Numero: " + numero);
         }
     }
-    
+
     public String cercaNumeroPerNome(String nome) {
         return rubrica.get(nome);
     }

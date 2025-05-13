@@ -1,5 +1,6 @@
 package esercizio1;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class Numeri {
     public static void main(String[] args) {
 
         HashSet<String> parole = new HashSet<>();
-        HashSet<String> duplicati = new HashSet<>();
+        ArrayList<String> duplicati = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -28,9 +29,9 @@ public class Numeri {
 
         }
 
-        System.out.println("Parole duplicate: " + duplicati);
-        System.out.println("Numero di parole distinte: " + parole.size());
-        System.out.println("Elenco delle parole distinte: " + parole);
+        System.out.println("Parole duplicate sono: " + duplicati);
+        System.out.println("Numero di parole non duplicate: " + parole.size());
+        System.out.println("Elenco delle parole non duplicate: " + parole);
 
 
 
