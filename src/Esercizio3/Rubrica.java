@@ -30,14 +30,13 @@ public class Rubrica {
         return rubrica.get(nome);
     }
 
-    public String cercaNomePerNumero(String numero){
-
-        for (HashMap.Entry<String, String> entry : rubrica.entrySet()) {
-            if (entry.getValue().equals(numero)) {
-                return entry.getKey();  // Restituisce il nome associato al numero
+    public String cercaNomePerNumero(String numero) {
+        for (String nome : rubrica.keySet()) {
+            if (rubrica.get(nome).equals(numero)) {
+                return nome;  // Trovato il nome che ha quel numero
             }
         }
-        return null;  // Se non trovato
+        return null;  // Non trovato
     }
 
 
