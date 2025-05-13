@@ -21,11 +21,13 @@ public class Rubrica {
         rubrica.remove(nome);
     }
 
-    public void stampaRubrica(){
-        for (HashMap.Entry<String, String> entry : rubrica.entrySet()) {
-            System.out.println("Nome: " + entry.getKey() + ", Numero: " + entry.getValue());
+    public void stampaRubrica() {
+        for (String nome : rubrica.keySet()) {
+            String numero = rubrica.get(nome);
+            System.out.println("Nome: " + nome + ", Numero: " + numero);
         }
     }
+    
     public String cercaNumeroPerNome(String nome) {
         return rubrica.get(nome);
     }
@@ -33,7 +35,7 @@ public class Rubrica {
     public String cercaNomePerNumero(String numero) {
         for (String nome : rubrica.keySet()) {
             if (rubrica.get(nome).equals(numero)) {
-                return nome;  // Trovato il nome che ha quel numero
+                return nome;
             }
         }
         return null;  // Non trovato
